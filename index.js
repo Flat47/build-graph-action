@@ -17,7 +17,7 @@ try {
   var uatpath = ueroot + "/Engine/Build/BatchFiles/RunUAT.sh";
   if (process.platform === "win32")
   {
-    uatpath = ueroot += "\\Engine\\Build\\BatchFiles\\RunUAT.bat"
+    uatpath = ueroot + "\\Engine\\Build\\BatchFiles\\RunUAT.bat"
   }
 
   exec('"' + uatpath + '" BuildGraph -Script="' + script + '" -Target="' + target + '" -set:ProjectsRoot="' + projectsroot + '" -set:OutputDir="' + outputdir + '"', (err, stdout, stderr) => {
