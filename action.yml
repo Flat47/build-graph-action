@@ -1,6 +1,10 @@
 name: 'Build Graph'
 description: 'Runs build graph'
 inputs:
+  ueroot:
+    description: 'Location of unreal engine directory'
+    required: true
+    default: ''
   script:
     description: 'Location of script'
     required: true
